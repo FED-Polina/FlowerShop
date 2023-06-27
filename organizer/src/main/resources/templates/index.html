@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botanic Boutique</title>
+  <style>
+    /* CSS стили для макета сайта */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+
+      background: -webkit-linear-gradient(360deg, #e2ccbf,#e4afa1,#c16f71);/* Chrome 10-25, Safari 5.1-6 */
+
+    }
+
+    header {
+      background-image: url("https://static.tildacdn.com/tild3030-3461-4135-a161-376535303365/noroot.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: contain;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #fff;
+      font-size: 36px;
+    }
+
+    nav {
+      font-family: 'Courier New';
+      margin-top: 10px;
+      text-align: center;
+
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+
+
+    }
+
+    nav ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #AA6161;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #ccc;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .flower-image {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+      background-color: #F5EBEC;
+    }
+
+    .product {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .product-image {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+
+
+    .about-section {
+      font-family: 'Courier New';
+      background-color: #F5E4E6;
+      margin-top: 10px;
+      padding-left: 180px;
+      padding-right: 180px;
+
+    }
+
+    .catalog-section {
+      font-family: 'Courier New';
+      background-color: #DBB6AF;
+    }
+
+    .button {
+      font-family: 'Courier New';
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #AA6161;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+
+      background-color: #ccc;
+    }
+
+
+
+
+    .gallery-section {
+      font-family: 'Courier New';
+      background-color: #F5E4E6;
+      padding: 20px;
+    }
+
+    .gallery-image {
+      max-width: 300px;
+      height: auto;
+      margin: 10px;
+    }
+
+    .aboutt-section {
+
+      font-family: 'Courier New';
+      background-color: #F5EBEC;
+      padding-left: 180px;
+      padding-right: 180px;
+
+    }
+    .contact-section {
+
+      font-family: 'Courier New';
+      background-color: #F5E4E6;
+
+    }
+
+    footer {
+      font-family: 'Courier New';
+      background-color: #AA6161;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>Botanic Boutique</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#catalog-section">Каталог</a></li>
+    <li><a href="#gallery-section">Отзывы</a></li>
+    <li><a href="#aboutt-section">О нас</a></li>
+    <li><a href="#contact-section">Контакты</a></li>
+    <li><a href="cart.html">Корзина</a></li>
+  </ul>
+</nav>
+
+<section class="about-section">
+  <h2>Добро пожаловать в наш интернет-магазин цветов!</h2>
+  <p>Наши опытные флористы создают уникальные букеты из самых красивых цветов, чтобы порадовать Вас и ваших близких в любое время. Вы можете найти широкий ассортимент свежих цветов на любой вкус и случай.</p>
+
+  <img src="../pictures/pngwing.com.png" height="200" width="200"/>
+  <p>Закажите букет цветов прямо сейчас, и доставим его Вам в кратчайшие сроки.</p>
+</section>
+
+<section id="catalog-section" class="catalog-section">
+  <h3>Каталог товаров</h3>
+  <div class="product">
+    <img class="product-image" src="https://krot.info/uploads/posts/2022-03/1646104930_45-krot-info-p-vesennii-buket-s-giatsintami-tsveti-krasiv-50.jpg" alt="Цветок 1">
+    <h4>Букет "Весенний поцелуй"</h4>
+    <p>Цена: 3 500 руб.</p>
+    <button class="button" onclick="addToCart(0, 'Весенний поцелуй', 3500, 'https://krot.info/uploads/posts/2022-03/1646104930_45-krot-info-p-vesennii-buket-s-giatsintami-tsveti-krasiv-50.jpg')">Добавить в корзину</button>
+
+  </div>
+
+  <div class="product">
+    <img class="product-image" src="https://gorod-buketov.ru/wp-content/uploads/2023/01/1557828642_44325144.jpeg" alt="Цветок 2">
+    <h4>Букет "Пионовиль"</h4>
+    <p>Цена: 5 000 руб.</p>
+    <button class="button" onclick="addToCart(1, 'Пионовиль', 5000, 'https://gorod-buketov.ru/wp-content/uploads/2023/01/1557828642_44325144.jpeg')">Добавить в корзину</button>
+
+  </div>
+
+  <div class="product">
+    <img class="product-image" src="https://i.pinimg.com/originals/5d/9d/7e/5d9d7e0e8402ca05b2aed7bb4162140b.jpg" alt="Цветок 3">
+    <h4>Букет "Легкое касание"</h4>
+    <p>Цена: 4 500 руб.</p>
+    <button class="button" onclick="addToCart(2, 'Легкое касание', 4500, 'https://i.pinimg.com/originals/5d/9d/7e/5d9d7e0e8402ca05b2aed7bb4162140b.jpg')">Добавить в корзину</button>
+
+  </div>
+
+  <div class="product">
+    <img class="product-image" src="https://flo-master16.ru/uploads/products/5f037934a8ffd.jpg" alt="Цветок 4">
+    <h4>Букет "Белый танец"</h4>
+    <p>Цена: 7 500 руб.</p>
+    <button class="button" onclick="addToCart(3, 'Белый танец', 7500, 'https://flo-master16.ru/uploads/products/5f037934a8ffd.jpg')">Добавить в корзину</button>
+
+  </div>
+</section>
+
+<section class="catalog-section">
+  <div class="product">
+    <img class="product-image" src="https://flowers-novokuznetsk.ru/assets/images/products/1233/img-5878.jpg" alt="Цветок 1">
+    <h4>Букет "Ночная дива"</h4>
+    <p>Цена: 5 000 руб.</p>
+    <button class="button" onclick="addToCart(4, 'Ночная дива', 5000, 'https://flowers-novokuznetsk.ru/assets/images/products/1233/img-5878.jpg')">Добавить в корзину</button>
+
+  </div>
+
+  <div class="product">
+    <img class="product-image" src="https://flowersexpress-vrn.ru/assets/images/products/936/7c5bbb89-64a7-4563-9a81-27f9c3fece74.jpg" alt="Цветок 2">
+    <h4>Букет "Цветочная поэзия"</h4>
+    <p>Цена: 6 500 руб.</p>
+    <button class="button" onclick="addToCart(5, 'Цветочная поэзия', 6500, 'https://flowersexpress-vrn.ru/assets/images/products/936/7c5bbb89-64a7-4563-9a81-27f9c3fece74.jpg')">Добавить в корзину</button>
+
+  </div>
+
+  <div class="product">
+    <img class="product-image" src="http://content2.flowwow-images.com/data/flowers/1000x1000/71/1523400647_56269871.jpg" alt="Цветок 3">
+    <h4>Букет "Лунное сияние"</h4>
+    <p>Цена: 7 500 руб.</p>
+    <button class="button" onclick="addToCart(6, 'Лунное сияние', 7500, 'http://content2.flowwow-images.com/data/flowers/1000x1000/71/1523400647_56269871.jpg')">Добавить в корзину</button>
+
+  </div>
+
+  <div class="product">
+    <img class="product-image" src="https://beru-buket.ru/images/stories/virtuemart/product/yaAUuw7LuYo.jpg" alt="Цветок 4">
+    <h4>Букет "Долина романтики"</h4>
+    <p>Цена: 6 500 руб.</p>
+    <button class="button" onclick="addToCart(7, 'Долина романтики', 6500, 'https://beru-buket.ru/images/stories/virtuemart/product/yaAUuw7LuYo.jpg')">Добавить в корзину</button>
+
+  </div>
+</section>
+
+<section id="gallery-section" class="gallery-section">
+  <h3>Фотогалерея отзывов о покупке цветов</h3>
+  <img class="gallery-image" src="../pictures/Снимок экрана 2023-06-20 в 09.22.38.png" alt="Отзыв 1">
+  <img class="gallery-image" src="../pictures/Снимок экрана 2023-06-20 в 09.22.56.png" alt="Отзыв 2">
+  <img class="gallery-image" src="../pictures/Снимок экрана 2023-06-20 в 09.23.05.png" alt="Отзыв 3">
+</section>
+
+
+
+<section id="aboutt-section" class="aboutt-section">
+  <h3>О нас</h3>
+  <p>Botanic Boutique - это интернет-магазин цветов, где вы найдете лучший выбор красивых и свежих цветочных композиций.</p>
+  <p>Философия Botanic Boutique – видеть красоту в мелочах и создавать прекрасное ежедневно. А Вы, дорогой посетитель, позволяете нам проявляться и создавать чудесные цветочные композиции. В каждую из них мы вкладываем своё внимание и трепетное отношение.</p>
+</section>
+
+<section id="contact-section" class="contact-section">
+  <h3>Контакты</h3>
+  <p>Мы будем рады ответить на Ваши вопросы и принять заказы:</p>
+  <p>Телефон: +7 123 456 789</p>
+  <p>Email: info@flowershop.com</p>
+  <p>WhatsApp: <a href="https://wa.me/123456789">Напишите нам</a></p>
+  <p>Telegram: <a href="https://t.me/flowershop">Напишите нам</a></p>
+  <p>VK: <a href="https://vk.com/vambuketspb">Посетите нашу страницу</a></p>
+</section>
+
+<footer>
+  <p>Botanic Boutique &copy; 2023. Все права защищены.</p>
+</footer>
+
+<script>
+  //localStorage.clear();
+  function addToCart(productId, productName, productPrice, productImage) {
+    var product = {
+      id: productId,
+      name: productName,
+      price: productPrice,
+      image: productImage,
+      quantity: 1
+    };
+
+    var cart = JSON.parse(localStorage.getItem("cart")) || [];
+    var existingProduct = cart.find(function(item) {
+      return item.id === productId;
+    });
+
+    if (existingProduct) {
+      existingProduct.quantity++;
+    } else {
+      cart.push(product);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCounter();
+    calculateTotal();
+  }
+
+  function calculateTotal() {
+    var cart = JSON.parse(localStorage.getItem("cart")) || [];
+    var total = 0;
+
+    for (var i = 0; i < cart.length; i++) {
+      var product = cart[i];
+      total += product.price * product.quantity;
+    }
+
+    // Выводим общую стоимость в элемент с id "total"
+    var totalElement = document.getElementById("total");
+    if (totalElement) {
+      totalElement.innerHTML = total.toFixed(2);
+    }
+  }
+</script>
+
+
+</body>
+</html>
